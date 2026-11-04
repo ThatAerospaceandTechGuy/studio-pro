@@ -81,10 +81,10 @@ packages will be the supported way to use Studio Pro.
 Studio Pro is licensed under the **MIT License** or the **Apache License, Version
 2.0**, at your option.
 
-It is inspiredfrom PhotoCraft and retains the upstream copyright and licence
+It is inspired by ArtCraft and retains the upstream copyright and licence
 notices. The Studio Pro, Photo Pro and Audio Pro names, application icons and
 suite artwork are original to this project and are covered by the same terms. Studio
-Pro is not affiliated with or endorsed by PhotoCraft or its authors.
+Pro is not affiliated with or endorsed by ArtCraft or its authors.
 
 The licence texts and third-party notices are included in this repository:
 [MIT](licenses/MIT.txt), [Apache-2.0](licenses/Apache-2.0.txt),
