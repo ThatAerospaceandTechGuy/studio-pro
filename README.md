@@ -25,8 +25,7 @@ Studio Pro is the suite. **Photo Pro** is its layer-based image editor for peopl
 who want a native desktop application, real PSD files and local control. **Audio
 Pro** is its waveform sound editor for WAV, MP3, FLAC and OGG audio. Both are
 built in Rust; Photo Pro uses a GPU compositor and Audio Pro uses native audio
-playback. The suite is derived from the open-source PhotoCraft project, and the
-upstream copyright and licence notices are retained.
+playback.
 
 ## What it does
 
@@ -82,9 +81,9 @@ packages will be the supported way to use Studio Pro.
 Studio Pro is licensed under the **MIT License** or the **Apache License, Version
 2.0**, at your option.
 
-It is derived from PhotoCraft and retains the upstream copyright and licence
+It is inspiredfrom PhotoCraft and retains the upstream copyright and licence
 notices. The Studio Pro, Photo Pro and Audio Pro names, application icons and
-suite artwork are original to this fork and are covered by the same terms. Studio
+suite artwork are original to this project and are covered by the same terms. Studio
 Pro is not affiliated with or endorsed by PhotoCraft or its authors.
 
 The licence texts and third-party notices are included in this repository:
