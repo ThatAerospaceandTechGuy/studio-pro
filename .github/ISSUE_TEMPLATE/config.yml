@@ -1,0 +1,11 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Studio Pro source and build guide
+    url: https://github.com/ThatAerospaceandTechGuy/photo-pro
+    about: Read the source README before opening a build or development issue.
+  - name: Security policy
+    url: https://github.com/ThatAerospaceandTechGuy/studio-pro/security
+    about: Report a vulnerability privately instead of opening a public issue.
+  - name: Support guide
+    url: https://github.com/ThatAerospaceandTechGuy/studio-pro/blob/main/SUPPORT.md
+    about: Read what to include before filing an issue.

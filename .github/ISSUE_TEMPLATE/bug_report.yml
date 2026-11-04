@@ -1,0 +1,100 @@
+name: Bug report
+description: Report a Studio Pro bug, build failure or release problem.
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting a problem. Studio Pro is early alpha. Please search
+        existing issues first and remove personal information, document contents
+        and credentials from anything you attach.
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Before you file
+      options:
+        - label: I searched existing issues and read the support guide.
+          required: true
+        - label: I reproduced the problem from the current source or release.
+          required: false
+        - label: This report does not contain exploit details or a malicious file.
+          required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Desktop app
+        - CLI
+        - Build from source
+        - Packaging or release
+        - Web build
+        - Automation (JSON or MCP)
+        - Documentation
+    validations:
+      required: true
+
+  - type: input
+    id: version
+    attributes:
+      label: Version or commit
+      description: Release version, or the source commit used for a local build.
+      placeholder: "v0.1.0 or commit SHA"
+    validations:
+      required: true
+
+  - type: input
+    id: platform
+    attributes:
+      label: Platform and build
+      description: OS, architecture and build profile.
+      placeholder: "Windows 11 x64, release build"
+    validations:
+      required: true
+
+  - type: input
+    id: format
+    attributes:
+      label: File format
+      description: Format involved, if the problem is file-specific.
+      placeholder: "PSD, PNG, TIFF, SVG..."
+    validations:
+      required: false
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Describe the problem and its impact.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Include the smallest sequence that reliably reproduces the problem.
+      placeholder: |
+        1. Open ...
+        2. Select ...
+        3. Observe ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behaviour
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or screenshots
+      description: Remove personal paths, document contents and secrets first.
+      render: text
+    validations:
+      required: false
