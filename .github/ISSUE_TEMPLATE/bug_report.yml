@@ -16,7 +16,7 @@ body:
       options:
         - label: I searched existing issues and read the support guide.
           required: true
-        - label: I reproduced the problem from the current source or release.
+        - label: I reproduced the problem from the current release or pre-release.
           required: false
         - label: This report does not contain exploit details or a malicious file.
           required: true
@@ -28,7 +28,7 @@ body:
       options:
         - Desktop app
         - CLI
-        - Build from source
+        - Installation or update
         - Packaging or release
         - Web build
         - Automation (JSON or MCP)
@@ -39,9 +39,9 @@ body:
   - type: input
     id: version
     attributes:
-      label: Version or commit
-      description: Release version, or the source commit used for a local build.
-      placeholder: "v0.1.0 or commit SHA"
+      label: Version or build
+      description: Release version or build identifier, if available.
+      placeholder: "v0.1.0 or build identifier"
     validations:
       required: true
 

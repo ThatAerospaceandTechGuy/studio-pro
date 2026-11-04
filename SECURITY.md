@@ -6,10 +6,9 @@ command parameters as potentially malicious.
 
 ## Supported versions
 
-Studio Pro is in early alpha and has **no public installers yet**. The source is
-maintained in [`photo-pro`](https://github.com/ThatAerospaceandTechGuy/photo-pro).
-Once public builds are published, the current stable release and the latest
-pre-release will be listed here as supported.
+Studio Pro is in early alpha and has **no public installers yet**. The application
+source is maintained privately. Once public builds are published, the current
+stable release and the latest pre-release will be listed here as supported.
 
 ## Reporting a vulnerability
 
@@ -24,14 +23,14 @@ coordinate a fix before publishing details.
 
 A useful report includes:
 
-- the affected Studio Pro version, commit or release asset;
+- the affected Studio Pro release asset and build identifier, if available;
 - the operating system, architecture, build profile and relevant feature flags;
 - the affected component, format or command;
 - the security impact and required attacker access;
 - exact reproduction steps;
 - expected and actual behaviour;
 - sanitized logs or backtraces;
-- whether the problem reproduces from a clean checkout or download;
+- whether the problem reproduces from a clean download;
 - any known workaround or containment.
 
 Remove credentials, personal paths, private document content and unrelated system
@@ -67,8 +66,7 @@ individual safe preferences, but whole-preferences updates and
 filesystem-bearing preference sections are refused; applying the Preferences
 dialog through automation is also refused. JSON-depth, render, document-memory,
 command-duration, client-identity, encryption and audit controls are not yet
-implemented. The [source security documentation](https://github.com/ThatAerospaceandTechGuy/photo-pro/blob/main/book/src/security/overview.md)
-has the source-backed status and hardening roadmap.
+implemented. The detailed source-backed security review is maintained privately.
 
 ## Safe testing
 

@@ -1,6 +1,6 @@
 <p align="center">
   <strong>Studio Pro</strong><br>
-  A native, open-source image editor built in Rust.
+  A native image editor built in Rust.
 </p>
 
 <p align="center">
@@ -11,23 +11,24 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/ThatAerospaceandTechGuy/photo-pro"><img alt="View the source" src="https://img.shields.io/badge/View%20the%20source-photo--pro-24292f?style=for-the-badge"></a>
+  <a href="RELEASES.md"><img alt="Read the release policy" src="https://img.shields.io/badge/Release%20policy-Studio%20Pro-24292f?style=for-the-badge"></a>
   <a href="https://github.com/ThatAerospaceandTechGuy/studio-pro/issues"><img alt="Report an issue" src="https://img.shields.io/badge/Report%20an%20issue-GitHub%20Issues-0969da?style=for-the-badge"></a>
 </p>
 
 > [!IMPORTANT]
-> **Studio Pro is in early alpha and has no public installers yet.** The source
-> and development builds live in [`photo-pro`](https://github.com/ThatAerospaceandTechGuy/photo-pro).
-> This repository is the public home for release downloads, release notes and
-> issue tracking. Watch the repository for the first build announcement.
+> **Studio Pro is in early alpha and has no public installers yet.** This
+> repository is the public release home and issue tracker. The application source
+> is maintained privately during early alpha. Watch the repository for the first
+> build announcement.
 
 Studio Pro is a layer-based image editor for people who want a native desktop
 application, real PSD files and local control. It is an independent fork of the
-open-source **PhotoCraft** project, built with Rust and a GPU compositor. It is
-not affiliated with or endorsed by the upstream project or its authors.
+open-source [PhotoCraft](https://github.com/storytold/photocraft) project, built
+with Rust and a GPU compositor. It is not affiliated with or endorsed by the
+upstream project or its authors.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ThatAerospaceandTechGuy/photo-pro/main/docs/images/studiopro-demo.jpg" alt="Studio Pro editing a painting with type and adjustment layers" width="100%">
+  <img src="assets/studiopro-demo.jpg" alt="Studio Pro editing a painting with type and adjustment layers" width="100%">
 </p>
 
 ## What it does
@@ -56,7 +57,7 @@ colour management, Assign/Convert to Profile, soft proofing and gamut warning.
 | Item | Status |
 | --- | --- |
 | Public installers | **Not yet published** |
-| Source code | [`photo-pro`](https://github.com/ThatAerospaceandTechGuy/photo-pro) |
+| Source code | Private during early alpha |
 | Issue tracker | This repository |
 | Licence | MIT **or** Apache-2.0, at your option |
 | Desktop platforms | Windows, macOS, Linux and FreeBSD |
@@ -74,44 +75,27 @@ repository will publish:
 - the licence, notice and attribution files that ship with the binaries.
 
 Release tags, asset naming, checksum and pre-release rules are documented in
-[RELEASES.md](RELEASES.md). The source repository is the only supported way to
-build Studio Pro today.
-
-## Build from source
-
-Studio Pro needs a recent stable Rust toolchain; the workspace pins its version
-in `rust-toolchain.toml`.
-
-```sh
-git clone https://github.com/ThatAerospaceandTechGuy/photo-pro.git "Studio Pro"
-cd "Studio Pro"
-
-# Desktop app
-cargo run --release -p studiopro
-
-# Headless CLI
-cargo run --release -p studiopro-cli -- --help
-```
-
-On Linux, install the native build dependencies listed in the source
-repository's [`docs/development.md`](https://github.com/ThatAerospaceandTechGuy/photo-pro/blob/main/docs/development.md).
-Packaging scripts for macOS, Windows, Linux, FreeBSD and the web are under
-[`packaging/`](https://github.com/ThatAerospaceandTechGuy/photo-pro/tree/main/packaging).
+[RELEASES.md](RELEASES.md). The source is maintained privately; public release
+packages will be the supported way to use Studio Pro.
 
 ## Licence
 
-Studio Pro is free software licensed under the **MIT License** or the **Apache
-License, Version 2.0**, at your option.
+Studio Pro is licensed under the **MIT License** or the **Apache License, Version
+2.0**, at your option.
 
 It is derived from PhotoCraft and retains the upstream copyright and licence
 notices. The Studio Pro name, application icon and fork-specific artwork are
 original to this fork and are covered by the same terms. Studio Pro is not
 affiliated with or endorsed by PhotoCraft or its authors.
 
-The canonical licence texts, `NOTICE` and `ATTRIBUTION.md` are maintained in the
-[source repository](https://github.com/ThatAerospaceandTechGuy/photo-pro). See
+The licence texts and third-party notices are included in this repository:
+[MIT](licenses/MIT.txt), [Apache-2.0](licenses/Apache-2.0.txt),
+[NOTICE](NOTICE) and [ATTRIBUTION.md](ATTRIBUTION.md). See
 [LICENSES.md](LICENSES.md) for the scope. Every binary release will bundle the
 applicable notices.
+
+The application source is maintained privately and is not distributed in this
+repository.
 
 ## Security and support
 
@@ -119,11 +103,11 @@ applicable notices.
   details, credentials or malicious image files in a public issue.
 - **Product and release support:** open an issue after reading
   [SUPPORT.md](SUPPORT.md).
-- **Source changes:** see the
-  [source repository](https://github.com/ThatAerospaceandTechGuy/photo-pro).
+- **Development updates:** watch the [releases page](https://github.com/ThatAerospaceandTechGuy/studio-pro/releases)
+  for public build announcements.
 
 ## About this repository
 
 This repository is the public release home and issue tracker for Studio Pro. It
-currently contains documentation only; it does not contain the application
-source or public binaries.
+currently contains documentation only; it does not contain the application source
+or public binaries.

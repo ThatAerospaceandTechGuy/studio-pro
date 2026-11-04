@@ -1,8 +1,8 @@
 # Release policy
 
 Studio Pro is in early alpha and has **no public releases yet**. This page defines
-the release contract for the first and subsequent builds. The source lives in
-[`photo-pro`](https://github.com/ThatAerospaceandTechGuy/photo-pro).
+the release contract for the first and subsequent builds. The application source
+is maintained privately.
 
 ## Tags
 
@@ -10,14 +10,14 @@ the release contract for the first and subsequent builds. The source lives in
 | --- | --- | --- |
 | Stable | `vMAJOR.MINOR.PATCH` | Yes, newest stable release |
 | Pre-release | `vMAJOR.MINOR.PATCH-rc.N` | No |
-| Development build | Compile from source | Not published here |
+| Development build | Private source build | Not published here |
 
 A pre-release must be marked as a pre-release on GitHub and must never become the
 latest stable release. Tags are immutable once published.
 
 ## Planned packages
 
-The source packaging scripts target:
+Release packaging targets:
 
 | Platform | Planned packages |
 | --- | --- |
@@ -66,5 +66,5 @@ follow [SUPPORT.md](SUPPORT.md).
 
 ## Scope
 
-This repository is the public release home. The application source is not stored
-here, and no binaries are available yet.
+This repository is the public release home. The application source is private and
+no binaries are available yet.
