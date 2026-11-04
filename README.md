@@ -12,24 +12,17 @@ A native suite for creative apps: Photo Pro for images, Audio Pro for sound.
 <a href="RELEASES.md"><img alt="Read the release policy" src="https://img.shields.io/badge/Release%20policy-Studio%20Pro-24292f?style=for-the-badge"></a>
 <a href="https://github.com/ThatAerospaceandTechGuy/studio-pro/issues"><img alt="Report an issue" src="https://img.shields.io/badge/Report%20an%20issue-GitHub%20Issues-0969da?style=for-the-badge"></a>
 </p>
-
 > [!IMPORTANT]
 > **Studio Pro is in early alpha and has no public installers yet.** This
 > repository is the public release home and issue tracker. The application source
 > is maintained privately during early alpha. Watch the repository for the first
 > build announcement.
-
 Studio Pro is the suite. **Photo Pro** is its layer-based image editor for people
 who want a native desktop application, real PSD files and local control. **Audio
 Pro** is its waveform sound editor for WAV, MP3, FLAC and OGG audio. Both are
 built in Rust; Photo Pro uses a GPU compositor and Audio Pro uses native audio
 playback. The suite is derived from the open-source PhotoCraft project, and the
 upstream copyright and licence notices are retained.
-
-<p align="center">
-<img src="assets/studiopro-demo.jpg" alt="Photo Pro editing a painting with type and adjustment layers" width="100%">
-</p>
-
 ## What it does
 | | |
 | --- | --- |
@@ -38,17 +31,14 @@ upstream copyright and licence notices are retained.
 | **Native performance** | Photo Pro's GPU compositor runs on wgpu (Metal, Vulkan, DirectX 12 and WebGPU), with copy-on-write tiles and multithreaded filters. Neither app uses Electron or a webview on the desktop. |
 | **Real files** | Photo Pro opens, edits and saves layered PSD and PSB documents, with round-trip coverage across a large real-world corpus. It also reads layered TIFF, Paint.NET PDN, OpenRaster, GIMP XCF, Krita KRA, Affinity documents (read-only) and SVG. |
 | **Built for automation** | Every Photo Pro action is a command. Drive the same engine from the UI, the `studiopro-cli` command line, a JSON control channel or an MCP server. |
-
 ### Formats
 PSD/PSB, layered TIFF, `.pcraft`, PDN, ORA, XCF, KRA, Affinity (read-only), SVG,
 PNG, JPEG, TIFF, WebP, GIF, BMP, TGA, ICO, QOI, PNM, OpenEXR, Radiance HDR and
 FITS. HEIC is available in official desktop builds; AVIF export is available with
 the optional `avif` build feature.
-
 ### Colour and depth
 RGB, Grayscale, CMYK and Lab documents at 8, 16 and 32 bits per channel, with ICC
 colour management, Assign/Convert to Profile, soft proofing and gamut warning.
-
 ## Project status
 | Item | Status |
 | --- | --- |
@@ -60,7 +50,6 @@ colour management, Assign/Convert to Profile, soft proofing and gamut warning.
 | Desktop platforms | Windows, macOS, Linux and FreeBSD |
 | Web | Photo Pro static WebAssembly build |
 | Stability | Early alpha — keep backups of important documents |
-
 ## Download and releases
 There are **no public downloads yet**. When the first suite build is ready, this
 repository will publish:
@@ -68,29 +57,23 @@ repository will publish:
 - a checksum file for every release;
 - release notes and known limitations;
 - the licence, notice and attribution files that ship with the binaries.
-
 Release tags, asset naming, checksum and pre-release rules are documented in
 [RELEASES.md](RELEASES.md). The source is maintained privately; public release
 packages will be the supported way to use Studio Pro.
-
 ## Licence
 Studio Pro is licensed under the **MIT License** or the **Apache License, Version
 2.0**, at your option.
-
 It is derived from PhotoCraft and retains the upstream copyright and licence
 notices. The Studio Pro, Photo Pro and Audio Pro names, application icons and
 suite artwork are original to this fork and are covered by the same terms. Studio
 Pro is not affiliated with or endorsed by PhotoCraft or its authors.
-
 The licence texts and third-party notices are included in this repository:
 [MIT](licenses/MIT.txt), [Apache-2.0](licenses/Apache-2.0.txt),
 [NOTICE](NOTICE) and [ATTRIBUTION.md](ATTRIBUTION.md). See
 [LICENSES.md](LICENSES.md) for the scope. Every binary release will bundle the
 applicable notices.
-
 The application source is maintained privately and is not distributed in this
 repository.
-
 ## Security and support
 - **Security reports:** follow [SECURITY.md](SECURITY.md). Do not post exploit
   details, credentials or malicious image files in a public issue.
@@ -98,7 +81,6 @@ repository.
   [SUPPORT.md](SUPPORT.md).
 - **Development updates:** watch the [releases page](https://github.com/ThatAerospaceandTechGuy/studio-pro/releases)
   for public build announcements.
-
 ## About this repository
 This repository is the public release home and issue tracker for the Studio Pro
 suite. It currently contains documentation only; it does not contain the
