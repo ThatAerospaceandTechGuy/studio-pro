@@ -1,6 +1,6 @@
 <p align="center">
   <strong>Studio Pro</strong><br>
-  A native suite for creative apps: Photo Pro for images, Audio Pro for sound.
+  A native suite for creative apps: Photo Pro for images, Audio Pro for sound, Effects Pro for motion graphics.
 </p>
 
 <p align="center">
@@ -23,17 +23,18 @@
 
 Studio Pro is the suite. **Photo Pro** is its layer-based image editor for people
 who want a native desktop application, real PSD files and local control. **Audio
-Pro** is its waveform sound editor for WAV, MP3, FLAC and OGG audio. Both are
-built in Rust; Photo Pro uses a GPU compositor and Audio Pro uses native audio
-playback.
+Pro** is its waveform sound editor for WAV, MP3, FLAC and OGG audio. **Effects
+Pro** is its motion-graphics and visual-effects editor for animated titles and
+compositing. All three are built in Rust; Photo Pro uses a GPU compositor, Audio Pro uses native audio playback, and Effects Pro uses a GPU compositor.
 
 ## What it does
 
 | | |
 | --- | --- |
 | **Image editing** | **Photo Pro** has Photoshop-style menus, shortcuts, panels and tools, including layers, masks, clipping masks, layer styles, adjustment layers, smart objects and smart filters. |
+| **Motion graphics** | **Effects Pro** adds a layer-based compositor with keyframes, expressions, 3D cameras and lights, effects and a render queue. |
 | **Sound editing** | **Audio Pro** opens WAV, MP3, FLAC and OGG, with waveform selection, playback, cut/copy/paste, trim, undo/redo, normalize, amplify, fades, reverse and 16-bit WAV export. |
-| **Native performance** | Photo Pro's GPU compositor runs on wgpu (Metal, Vulkan, DirectX 12 and WebGPU), with copy-on-write tiles and multithreaded filters. Neither app uses Electron or a webview on the desktop. |
+| **Native performance** | Photo Pro's GPU compositor runs on wgpu (Metal, Vulkan, DirectX 12 and WebGPU), with copy-on-write tiles and multithreaded filters. None of the apps uses Electron or a webview on the desktop. |
 | **Real files** | Photo Pro opens, edits and saves layered PSD and PSB documents, with round-trip coverage across a large real-world corpus. It also reads layered TIFF, Paint.NET PDN, OpenRaster, GIMP XCF, Krita KRA, Affinity documents (read-only) and SVG. |
 | **Built for automation** | Every Photo Pro action is a command. Drive the same engine from the UI, the `studiopro-cli` command line, a JSON control channel or an MCP server. |
 
@@ -53,13 +54,13 @@ colour management, Assign/Convert to Profile, soft proofing and gamut warning.
 
 | Item | Status |
 | --- | --- |
-| Apps | **Photo Pro** (images) and **Audio Pro** (sound) |
+| Apps | **Photo Pro** (images), **Audio Pro** (sound) and **Effects Pro** (motion graphics) |
 | Public installers | **Not yet published** |
 | Source code | Private during early alpha |
 | Issue tracker | This repository |
 | Licence | MIT **or** Apache-2.0, at your option |
 | Desktop platforms | Windows, macOS, Linux and FreeBSD |
-| Web | Photo Pro static WebAssembly build |
+| Web | Photo Pro static WebAssembly build; Effects Pro web build in development |
 | Stability | Early alpha — keep backups of important documents |
 
 ## Download and releases
@@ -67,7 +68,8 @@ colour management, Assign/Convert to Profile, soft proofing and gamut warning.
 There are **no public downloads yet**. When the first suite build is ready, this
 repository will publish:
 
-- platform packages for Windows, macOS, Linux and FreeBSD;
+- platform packages for Photo Pro and Audio Pro on Windows, macOS, Linux and FreeBSD;
+- Effects Pro announcements from its separate release home when that build is ready;
 - a checksum file for every release;
 - release notes and known limitations;
 - the licence, notice and attribution files that ship with the binaries.
@@ -82,7 +84,7 @@ Studio Pro is licensed under the **MIT License** or the **Apache License, Versio
 2.0**, at your option.
 
 It is inspired by ArtCraft and retains the upstream copyright and licence
-notices. The Studio Pro, Photo Pro and Audio Pro names, application icons and
+notices. The Studio Pro, Photo Pro, Audio Pro and Effects Pro names, application icons and
 suite artwork are original to this project and are covered by the same terms. Studio
 Pro is not affiliated with or endorsed by ArtCraft or its authors.
 

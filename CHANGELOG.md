@@ -8,6 +8,7 @@ recorded here. The product is in early alpha and has no public builds yet.
 ### Added
 
 - Public Studio Pro release home and issue tracker.
+- Effects Pro documented as the suite's motion-graphics and visual-effects app.
 - Project overview, format support and development status.
 - Licensing, security, support and release-policy documentation.
 - Structured bug report form.
