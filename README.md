@@ -68,8 +68,8 @@ colour management, Assign/Convert to Profile, soft proofing and gamut warning.
 There are **no public downloads yet**. When the first suite build is ready, this
 repository will publish:
 
-- platform packages for Photo Pro and Audio Pro on Windows, macOS, Linux and FreeBSD;
-- Effects Pro announcements from its separate release home when that build is ready;
+- platform packages for Photo Pro, Audio Pro and Effects Pro on Windows, macOS, Linux and FreeBSD;
+- Effects Pro announcements when that build is ready;
 - a checksum file for every release;
 - release notes and known limitations;
 - the licence, notice and attribution files that ship with the binaries.
@@ -95,6 +95,7 @@ The licence texts and third-party notices are included in this repository:
 applicable notices.
 
 The application source is maintained privately and is not distributed in this
+repository. All three apps are developed together in one Studio Pro source
 repository.
 
 ## Security and support
