@@ -4,6 +4,9 @@ A native creative suite for images, sound and motion: **Photo Pro**, **Audio Pro
 **Effects Pro**. Built in Rust, with a real PSD pipeline, native audio playback and a
 GPU compositor. No Electron or webview on the desktop.
 
+This repository is the public documentation and release home. It does not host the
+Studio Pro source code.
+
 [Releases](https://github.com/ThatAerospaceandTechGuy/studio-pro/releases) ·
 [Report an issue](https://github.com/ThatAerospaceandTechGuy/studio-pro/issues) ·
 [Release policy](RELEASES.md) · [Changelog](CHANGELOG.md)
@@ -13,6 +16,8 @@ GPU compositor. No Electron or webview on the desktop.
 | **Photo Pro** | Layer-based image editor | `.pcraft`, PSD/PSB, layered TIFF |
 | **Audio Pro** | Waveform sound editor | WAV, MP3, FLAC, OGG |
 | **Effects Pro** | Motion-graphics and visual-effects editor | `.fxproj` |
+
+![The Studio Pro application window, with the Layers panel and an original studio title composition](docs/images/studiopro-app.png)
 
 ## Download
 

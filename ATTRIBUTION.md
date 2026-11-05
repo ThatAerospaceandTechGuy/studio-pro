@@ -98,6 +98,7 @@ The other built-in ICC profiles and the generated LUT looks are produced by code
 | Path | Title | Author | Source | License |
 |---|---|---|---|---|
 | `docs/images/studiopro-*.jpg` | Studio Pro screenshots | Studio Pro contributors (UI) | Rendered offscreen with the `snapshot` example | MIT OR Apache-2.0 (UI); the artwork in each is public domain, listed below |
+| `docs/images/studiopro-app.png` | Studio Pro application window with an original synthetic composition | Studio Pro contributors (UI) | Captured from the running application with the control channel; no external artwork | MIT OR Apache-2.0 |
 | `docs/images/preferences-apply-*.png` | Preferences before and after adding Apply (no artwork) | Studio Pro contributors | Studio Pro control-channel capture and offscreen `snapshot` example | MIT OR Apache-2.0 |
 | `docs/images/embedded-vector-editor-en.png` | Embedded AI/PDF/EPS conversion warning and editor chooser (no artwork) | Don Omondi | Offscreen `smart_svg_ui::tests::capture_embedded_vector_conversion_prompt` with authored bytes and mock services | MIT OR Apache-2.0 |
 | `docs/images/embedded-vector-tabs-linux.png` | Shared VectorCraft window after a portal editor save and ordinary document launch | Don Omondi | Local Linux GUI acceptance with authored orange rectangle/blue circle SVGs; no private artwork | MIT OR Apache-2.0 |
@@ -111,7 +112,6 @@ Artwork shown in the screenshots (all public domain, via Wikimedia Commons; deta
 
 | Screenshot | Artwork | Source |
 |---|---|---|
-| `studiopro-demo.jpg` | *The Great Wave off Kanagawa*, Katsushika Hokusai, c. 1831 | [Commons](https://commons.wikimedia.org/wiki/File:Tsunami_by_hokusai_19th_century.jpg) |
 | `studiopro-layer-styles.jpg` | *Earthrise*, William Anders, Apollo 8, 1968 (NASA) | [Commons](https://commons.wikimedia.org/wiki/File:NASA-Apollo8-Dec24-Earthrise.jpg) |
 | `studiopro-masks.jpg` | *Girl with a Pearl Earring*, Johannes Vermeer, c. 1665 | [Commons](https://commons.wikimedia.org/wiki/File:1665_Girl_with_a_Pearl_Earring.jpg) |
 | `studiopro-vector.jpg` | *Water Lilies*, Claude Monet, 1906 | [Commons](https://commons.wikimedia.org/wiki/File:Claude_Monet_-_Water_Lilies_-_1906,_Ryerson.jpg) |
